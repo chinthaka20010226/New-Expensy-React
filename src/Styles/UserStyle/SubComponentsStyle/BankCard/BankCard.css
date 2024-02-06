@@ -1,0 +1,58 @@
+/* --- Variable setup --- */
+:root {
+    --c-backgroundSideBar: #000000;
+    --c-fontSideBar: #76847e;
+    --c-backgroundHoverSideBar: #03d47c;
+    --c-fontHover: #ffffff;
+    --c-activeBackgroundSideBar : #03d47c;
+}
+
+
+/* --- Body --- */
+.bank-card-container {
+    margin-top: 80px;
+}
+
+.bank-card-top-section-title {
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.bank-card-body-card-section {
+    border: none;
+}
+
+.bank-card-body-section-save {
+    margin-bottom: 40px;
+    border: none;
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
+    padding-top: 50px !important;
+}
+
+.bank-card-body-section-add {
+    padding: 30px 0px;
+}
+
+.bank-card-body-section-add {
+    border: none;
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
+}
+
+.bank-card-card {
+    background: var(--c-fontHover);
+    border: none;
+    /* z-index: -1; */
+}
+
+.bank-submit-btn {
+    font-weight: 600;
+    background: var(--c-activeBackgroundSideBar);
+    color: var(--c-fontHover);
+}
+
+
+/* --- Animation --- */
+.bank-submit-btn:hover {
+    background-color: var(--c-btnHover);
+    color: var(--c-fontHover);
+}

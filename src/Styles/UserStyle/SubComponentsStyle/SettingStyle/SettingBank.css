@@ -1,0 +1,73 @@
+/* --- Variable setup --- */
+:root {
+    --c-backgroundSideBar: #000000;
+    --c-fontSideBar: #76847e;
+    --c-backgroundHoverSideBar: #03d47c;
+    --c-fontHover: #fff;
+    --c-activeBackgroundSideBar: #03d47c;
+    --c-settingBankIcon: #000000;
+}
+
+
+/* --- Body --- */
+.setting-bank-container{}
+
+.setting-bank-top-bar {
+    padding-bottom: 10px;
+}
+
+.setting-bank-top-bar-title {
+    font-size: 40px;
+    font-weight: 650;
+}
+
+.setting-bank-body {
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
+    padding: 10px 30px;
+    margin: 10px 60px;
+    border: none;
+}
+
+.setting-bank-body-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100px;
+    padding: 20px;
+}
+
+.setting-bank-body-items {}
+
+.setting-bank-body-item {
+    display: flex;
+    padding: 20px;
+}
+
+.setting-bank-body-item-text {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.setting-bank-body-item-icon {
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--c-settingBankIcon);
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+
+/* --- Animation --- */
+.setting-bank-body-item-icon:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}

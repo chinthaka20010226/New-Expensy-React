@@ -1,0 +1,89 @@
+.userdashboard-container {
+    margin-top: 80px;
+    /* background-color: aqua; */
+}
+
+.userdashboard-wrapper {
+    /* margin-top: 200px; */
+}
+
+.box1{
+    width:2px;
+    height: 25px;
+    background: black ;
+}
+.box2{
+    position: relative;
+    left:335px;
+    bottom:500px;
+}
+.box-a{
+    width:10px;
+    height: 10px;
+    background-color: blue;
+    position: relative;
+    left:50px;
+    bottom:10px;
+    margin:20px;
+    margin-right: 0;
+    
+    
+}
+.box-b{
+    width:10px;
+    height: 10px;
+    background-color: rgb(19, 168, 236);
+    position: relative;
+    left:130px;
+    bottom:10px;
+    margin:20px;
+    margin-right: 4;
+    margin-left: 25px;
+}
+.span{
+    position:relative;
+    left:10px;
+    /* color: white; */
+}
+.span2{
+    left:50px;
+}
+.inputbox{
+    width:100px;
+    position: relative;
+    left:200px;
+}
+.dash{
+    position: relative;
+    left:200px;
+}
+.iconbox{
+    position: relative;
+    left:150px;
+}
+.ic{
+    position: relative;
+    left:200px;
+}
+.pro{
+    position:relative;
+    left:335px;
+    bottom:520px;
+}
+.probox{
+    width:100px;
+    height:100px;
+}
+.progessBar{
+    position: relative;
+    bottom:25px;
+}
+.h1{
+    color:white;
+}
+.user{
+    position: relative;
+    top:100px;
+    width: 100px;
+    left:13px;
+}

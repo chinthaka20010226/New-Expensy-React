@@ -1,0 +1,12 @@
+.top-section-main {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    margin-left: -8px;
+    border-bottom: 1px solid #ebe6df;
+    background-color: #FCFBF9;
+}
+
+.top-section-main-title {
+    font-size: 30px;
+}

@@ -15,10 +15,10 @@
 
 .setting-top-bar {}
 
-.top-bar-title {
+/* .top-bar-title {
     font-size: 50px;
     font-weight: 700;
-}
+} */
 
 .top-bar-items {
     display: flex;
@@ -34,7 +34,7 @@
     font-size: 18px;
     font-weight: 600;
     margin: 5px;
-    padding: 5px;
+    padding: 3px;
     width: calc(10% * 2);
 }
 

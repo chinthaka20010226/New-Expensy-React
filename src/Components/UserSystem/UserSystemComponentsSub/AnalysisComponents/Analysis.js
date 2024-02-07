@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Analysis.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/AnalysisStyle/Analysis.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function Analysis(){
     return(

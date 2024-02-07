@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Transactions.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/TransactionsStyle/Transactions.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function Transactions(){
     return(

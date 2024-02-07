@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/SettingBank.css';
+import '../../../../../Styles/UserStyle/SubComponentsStyle/SettingStyle/SettingBank.css';
 
 import { RiUserSettingsFill } from "react-icons/ri";
 import { IoIosArrowDropright } from "react-icons/io";

@@ -1,10 +1,10 @@
 import React from 'react'
 // import SideBar from '../Components/SideBar'
 // import Nav from '../Components/Nav'
-import '../Style/UserDashBoard.css'
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/UserDashBoardStyle/UserDashBoard.css'
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+// import 'react-circular-progressbar/dist/styles.css';
 
 
 import {
@@ -57,7 +57,7 @@ function Dashboard() {
 
     return (
         <div className='userdashboard-container container-fluid mx-0 px-0 min-vh-100 position-scroll'>
-            <div className='row'>
+            <div className='row w-100'>
                 <div className='col top-section-main py-3'>
                     <h1 className='top-section-main-title px-3'>UserDashBoard</h1>
                 </div>
@@ -76,7 +76,7 @@ function Dashboard() {
             {/* <div className='col-3 bg-primary vh-120 position-sticky'>
                 <Nav/>
             </div> */}
-            <div className='col-12 px-3 userdashboard-wrapper'>
+            <div className='col-12 px-5 m-0 userdashboard-wrapper'>
                 <div className='row g-3 my-2'>
                     <div className='col-md-3 '>
                         <div className='p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded'>

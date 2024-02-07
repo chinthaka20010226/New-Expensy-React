@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Report.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/ReportStyle/Report.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function Report(){
     return(

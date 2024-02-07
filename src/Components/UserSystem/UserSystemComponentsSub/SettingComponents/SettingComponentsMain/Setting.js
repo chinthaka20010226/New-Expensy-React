@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../Style/Setting.css';
-import '../Style/TopSectionMain.css';
+import '../../../../../Styles/UserStyle/MainComponentsStyle/Setting.css';
+import '../../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 import { NavLink, Outlet } from 'react-router-dom';
 
@@ -61,12 +61,12 @@ const Setting = ({children}) => {
                     </div>
                 </div>
                 <div className='row setting-top-bar'>
-                    <div className='col w-100'>
-                        <h1 className='top-bar-title w-100'>Setting</h1>
+                    <div className='col d-flex flex-column w-100'>
+                        {/* <h1 className='top-bar-title w-100'>Setting</h1> */}
                         <div style={{flexDirection: isOpen ? "row" : "column", alignItems: isOpen ? "center" : "center"}} className='top-bar-items col-12 w-100'>
                             {
                                 menuItems.map((item,index) => (
-                                    <NavLink to={item.path} key={index} style={{width: isOpen ? "100%" : "100%"}} className='setting-link' activeclassName='active_'>
+                                    <NavLink to={item.path} key={index} style={{width: isOpen ? "100%" : "100%"}} className='setting-link col' activeclassName='active_'>
                                         <div className='link_-text'>{item.name}</div>                                                                                              
                                     </NavLink>
                                 ))

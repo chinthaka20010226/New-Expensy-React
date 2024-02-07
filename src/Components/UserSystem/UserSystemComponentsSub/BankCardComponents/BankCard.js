@@ -1,7 +1,6 @@
 import React from 'react';
-import '../Style/BankCard.css';
-import '../Style/BankAccount.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/BankCardStyle/BankCard.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function BankCard(){
     return(

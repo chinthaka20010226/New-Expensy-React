@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Notifications.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/NotificationsStyle/Notifications.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function Notifications(){
     return(

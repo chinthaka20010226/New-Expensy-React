@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-import '../Style/SideBar.css';
+import '../../../Styles/UserStyle/MainComponentsStyle/SideBar.css';
 
 import { 
     MdOutlineDashboardCustomize,
@@ -50,7 +50,7 @@ const SideBar = ({ children }) => {
     const menuItems = [
         {
             path:"/",
-            name:"UserDashBoard",
+            name:"Home",
             icon:<MdOutlineDashboardCustomize />
         },
         {
@@ -96,134 +96,99 @@ const SideBar = ({ children }) => {
     ];
 
     return (
-        <div className='container_'>
-            <div className='row'>
-                <div className='col'>
-                    <div className='row'>
-                        <div className='col'>
-                        {/* <!-- Navbar --> */}
-                            <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-                            {/* <!-- Container wrapper --> */}
-                                <div class="container-fluid">
-                                {/* <!-- Toggle button --> */}
-                                    <button
-                                        data-mdb-collapse-init
-                                        class="navbar-toggler"
-                                        type="button"
-                                        data-mdb-target="#navbarSupportedContent"
-                                        aria-controls="navbarSupportedContent"
+        <div className='container_ h-100 w-100'>
+            <div className='row '>
+                <div className='col w-100 m-0 p-0 d-flex flex-column sidebar-main-container'>
+                    <nav style={{padding: isOpen ? "8px" : "15px"}} className={isOpen ? "navbar navbar-expand-sm vw-100 p-0 m-0" : "navbar vw-100 p-0 m-0"}>
+                        <div class="container-fluid navbar-container">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Projects</a>
+                                    </li>
+                                </ul>
+                                    
+                            </div>
+                                    
+                            <div class="d-flex align-items-center">
+                                {/* <!-- Notifications --> */}
+                                <div class="dropdown">
+                                    <a
+                                        data-mdb-dropdown-init
+                                        className="link-secondary me-3 dropdown-toggle hidden-arrow"
+                                        href="#"
+                                        id="navbarDropdownMenuLink"
+                                        role="button"
                                         aria-expanded="false"
-                                        aria-label="Toggle navigation"
+                                        >
+                                        <i className="fas fa-bell"></i>
+                                        <span className="badge rounded-pill badge-notification bg-danger">1</span>
+                                    </a>
+                                    {/* <ul
+                                    class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="navbarDropdownMenuLink"
                                     >
-                                    <i class="fas fa-bars"></i>
-                                    </button>
-
-                                    {/* <!-- Collapsible wrapper --> */}
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        {/* <!-- Navbar brand --> */}
-                                        <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                                            {/* <img
-                                            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                                            height="15"
-                                            alt="MDB Logo"
-                                            loading="lazy"
-                                            /> */}
-                                        </a>
-                                        {/* <!-- Left links --> */}
-                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Dashboard</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Team</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Projects</a>
-                                            </li>
-                                        </ul>
-                                        {/* <!-- Left links --> */}
-                                    </div>
-                                    {/* <!-- Collapsible wrapper --> */}
-
-                                    {/* <!-- Right elements --> */}
-                                    <div class="d-flex align-items-center">
-                                    {/* <!-- Icon --> */}
-                                        <a class="link-secondary me-3" href="#">
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </a>
-
-                                        {/* <!-- Notifications --> */}
-                                        <div class="dropdown">
-                                            <a
-                                            data-mdb-dropdown-init
-                                            class="link-secondary me-3 dropdown-toggle hidden-arrow"
-                                            href="#"
-                                            id="navbarDropdownMenuLink"
-                                            role="button"
-                                            aria-expanded="false"
-                                            >
-                                            <i class="fas fa-bell"></i>
-                                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                                            </a>
-                                            <ul
-                                            class="dropdown-menu dropdown-menu-end"
-                                            aria-labelledby="navbarDropdownMenuLink"
-                                            >
-                                            <li>
-                                                <a class="dropdown-item" href="#">Some news</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Another news</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </li>
-                                            </ul>
-                                        </div>
-                                        {/* <!-- Avatar --> */}
-                                        <div class="dropdown">
-                                            <a
-                                            data-mdb-dropdown-init
-                                            class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                                            href="#"
-                                            id="navbarDropdownMenuAvatar"
-                                            role="button"
-                                            aria-expanded="false"
-                                            >
-                                            <img
-                                                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                                                class="rounded-circle"
-                                                height="25"
-                                                alt="Black and White Portrait of a Man"
-                                                loading="lazy"
-                                            />
-                                            </a>
-                                            <ul
-                                            class="dropdown-menu dropdown-menu-end"
-                                            aria-labelledby="navbarDropdownMenuAvatar"
-                                            >
-                                            <li>
-                                                <a class="dropdown-item" href="#">My profile</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Settings</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Logout</a>
-                                            </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    {/* <!-- Right elements --> */}
+                                    <li>
+                                    <a className="dropdown-item" href="#">Some news</a>
+                                    </li>
+                                    <li>
+                                    <a className="dropdown-item" href="#">Another news</a>
+                                    </li>
+                                    <li>
+                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                    </ul> */}
                                 </div>
-                                {/* <!-- Container wrapper --> */}
-                            </nav>
-                            {/* <!-- Navbar --> */}
+                                {/* <!-- Avatar --> */}
+                                <div className="dropdown">
+                                    <a
+                                        data-mdb-dropdown-init
+                                        className="dropdown-toggle d-flex align-items-center hidden-arrow"
+                                        href="#"
+                                        id="navbarDropdownMenuAvatar"
+                                        role="button"
+                                        aria-expanded="false"
+                                    >
+                                    <img
+                                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                        className="rounded-circle"
+                                        height="25"
+                                        alt="Black and White Portrait of a Man"
+                                        loading="lazy"
+                                    />
+                                    </a>
+                                    {/* <ul
+                                    className="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="navbarDropdownMenuAvatar"
+                                    >
+                                    <li>
+                                    <a className="dropdown-item" href="#">My profile</a>
+                                    </li>
+                                    <li>
+                                    <a className="dropdown-item" href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                    <a className="dropdown-item" href="#">Logout</a>
+                                    </li>
+                                    </ul> */}
+                                </div>
+                            </div>
+                            {/* <!-- Right elements --> */}
                         </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col'>
-                            <div style={{ width: isOpen ? "250px" : "50px", transition: isOpen ? "0.1s" : "0.1s"}} className='side-bar'>
+                        {/* <!-- Container wrapper --> */}
+                    </nav>
+                    {/* <!-- Navbar --> */}
+
+                    <div className='row w-100'>
+                        <div className='col d-flex flex-row w-100'>
+                            <div style={{ width: isOpen ? "240px" : "50px", transition: isOpen ? "0.1s" : "0.1s"}} className='side-bar'>
                                 <div style={{ marginTop: isOpen ? "0px" : "60px" }} className='top-section'>
                                     <h1 style={{ display: isOpen ? "block" : "none" }} className='logo'>Logo</h1>
                                 </div>
@@ -238,7 +203,7 @@ const SideBar = ({ children }) => {
                                 }
                                 </div>
                             </div>
-                            <main style={{marginLeft: isOpen ? "250px" : "50px"}}>{children}</main>
+                            <main className='col container p-3 w-100' style={{marginLeft: isOpen ? "216px" : "26px"}}>{children}</main>
                         </div>
                     </div>
                 </div>

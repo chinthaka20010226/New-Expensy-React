@@ -1,26 +1,26 @@
 import React from 'react';
-import '../Style/BankAccount.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/BankAccountStyle/BankAccount.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 import { FaIdCard } from "react-icons/fa";
 
 function BankAccount(){
     return(
         <section className="h-100 w-100">
-            <div class="bank-acc-container">
-                <div className='row'>
+            <div class="bank-acc-container w-100">
+                <div className='row w-100'>
                     <div className='col top-section-main py-3'>
                         <h1 className='top-section-main-title px-3'>BankAccount</h1>
                     </div>
                 </div>
 
-                <div className='row'>
-                    <div className='col container py-1 px-md-5 h-100'>
+                <div className='row d-flex w-100'>
+                    <div className='col-sm-12 py-1 px-md-5 h-100 w-100'>
                         <form>
                             <p class="fw-bold mb-4 pb-2">Saved Accounts:</p>
 
                             <div className='card d-flex flex-column justify-content-center h-100 p-3 bank-acc-card w-100'>
-                                <div className='card-body'>
+                                <div className='card-body d-flex'>
                                     <div class="d-flex flex-row align-items-center mb-4 pb-1 bank-card-body-section-save-item">
                                         <div class="flex-fill mx-3">                                                                           
                                             <div class="form-outline">

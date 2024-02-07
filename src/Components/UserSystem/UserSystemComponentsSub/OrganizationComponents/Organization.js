@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Organization.css';
-import '../Style/TopSectionMain.css';
+import '../../../../Styles/UserStyle/SubComponentsStyle/OrganizationStyle/Organization.css';
+import '../../../../Styles/UserStyle/MainComponentsStyle/TopSectionMain.css';
 
 function Organization(){
     return(
